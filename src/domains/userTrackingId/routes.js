@@ -1,5 +1,6 @@
 const express = require("express");
 const { authenticateUser } = require("./controller");
+const UserTrackingId = require("./model");
 const router = express.Router();
 // ID
 router.get("/:id", async (req, res) => {
