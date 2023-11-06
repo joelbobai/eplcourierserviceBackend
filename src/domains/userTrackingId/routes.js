@@ -19,4 +19,16 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+
+
+router.get("/tracking/get_all", async (req, res) => {
+  try {
+    const fetchedUsers = await UserTrackingId.find({});
+    return res.status(200).json(fetchedUsers);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+
 module.exports = router;
