@@ -18,7 +18,7 @@ router.get("/:trackingId", async (req, res) => {
     res.status(400).send(error.message);
   }
 });
-router.get("/_id:id", async (req, res) => {
+router.get("/_id/:id", async (req, res) => {
   try {
     let { id } = req.params || req.body;
     id = id.trim();
