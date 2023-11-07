@@ -8,7 +8,7 @@ const ItemSchema = new Schema({
   itemPrice: String,
   itemQty: String,
   infoOne: String,
-  infoTwio: String,
+  infoTwo: String,
   infoThree: String,
 });
 
