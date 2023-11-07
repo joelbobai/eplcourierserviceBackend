@@ -142,7 +142,7 @@ router.post("/tracking/update", async (req, res) => {
     res.status(400).send(error.message);
   }
 });
-router.get("/tracking/delete", async (req, res) => {
+router.post("/tracking/delete", async (req, res) => {
   try {
     const deleteUsers = await UserTrackingId.findByIdAndDelete({});
     return res.status(200).json(deleteUsers);
