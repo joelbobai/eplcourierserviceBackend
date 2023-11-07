@@ -25,6 +25,11 @@ const UserSchema = new Schema({
     isThere: { type: Boolean, default: false },
     date: String,
   },
+  locationFive: {
+    location: String,
+    isThere: { type: Boolean, default: false },
+    date: String,
+  },
   address: String,
   discount: String,
   delivery: String,
